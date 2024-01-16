@@ -7,51 +7,55 @@
     <title>Joe Kendall</title>
     <style>
         body {
-            font-family: 'Yu Mincho', serif; /* Yu Mincho font */
+            font-family: 'Yu Mincho', serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5; /* Light background color */
-            color: #333;
+            background-color: #006666; /* Dark teal background color */
+            color: #fff; /* White text color */
         }
 
         header {
-            background-color: #333; /* Dark header background color */
+            background-color: #004a4a; /* Slightly darker teal header background color */
             color: #fff;
             padding: 1em;
             text-align: center;
         }
 
         header h1 {
-            font-weight: bold; /* Make the title bold */
+            font-weight: bold;
             margin: 0;
-            font-size: 1.5em; /* Adjust title font size */
+            font-size: 2em; /* Larger title font size */
         }
 
         nav {
-            background-color: #666; /* Dark navigation background color */
+            background-color: #003535; /* Darker teal navigation background color */
             overflow: hidden;
         }
 
         nav a {
             float: left;
             display: block;
-            color: white;
+            color: #fff;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+            transition: background-color 0.3s; /* Smooth color transition on hover */
+        }
+
+        nav a:hover {
+            background-color: #005757; /* Hover color for navigation links */
         }
 
         section {
             padding: 20px;
             margin: 20px;
-            background-color: #fff;
+            background-color: #004a4a; /* Slightly darker teal section background color */
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden; /* Clear floats */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Light shadow effect */
         }
 
         footer {
-            background-color: #333; /* Dark footer background color */
+            background-color: #004a4a; /* Slightly darker teal footer background color */
             color: #fff;
             padding: 1em;
             text-align: center;
@@ -66,29 +70,30 @@
         }
 
         .project h3 {
-            color: #333; /* Dark project title color */
+            color: #fff; /* White project title color */
         }
 
         .project p {
-            color: #555;
+            color: #ddd; /* Light gray text color for projects */
         }
 
         .project a {
-            color: #333; /* Dark project link color */
+            color: #fff;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s; /* Smooth color transition on hover */
         }
 
         .project a:hover {
-            text-decoration: underline;
+            color: #00b3b3; /* Hover color for project links */
         }
 
         /* Style for the image */
         #profile-image {
-            max-width: 100px; /* Adjust the width as needed */
+            max-width: 100px;
             float: left;
-            margin-right: 20px; /* Add some spacing between image and text */
-            border-radius: 8px;
+            margin-right: 20px;
+            border-radius: 50%; /* Circular border radius for the image */
         }
 
         /* Modern styling for the About Me section */
@@ -98,10 +103,17 @@
             justify-content: space-between;
         }
 
-        #about p {
+        #about div {
             flex: 1;
-            margin: 0;
-            padding-left: 20px; /* Add padding for better spacing */
+            padding-left: 20px;
+        }
+
+        #about h2 {
+            color: #fff;
+        }
+
+        #about p {
+            color: #ddd;
         }
     </style>
 </head>
