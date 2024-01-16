@@ -10,12 +10,12 @@
             font-family: 'Yu Mincho', serif; /* Yu Mincho font */
             margin: 0;
             padding: 0;
-            background-color: #b8d8e0; /* Slightly darker teal background color */
+            background-color: #f5f5f5; /* Light background color */
             color: #333;
         }
 
         header {
-            background-color: #005f5f; /* Slightly darker teal header background color */
+            background-color: #333; /* Dark header background color */
             color: #fff;
             padding: 1em;
             text-align: center;
@@ -23,10 +23,12 @@
 
         header h1 {
             font-weight: bold; /* Make the title bold */
+            margin: 0;
+            font-size: 1.5em; /* Adjust title font size */
         }
 
         nav {
-            background-color: #004a4a; /* Darker teal navigation background color */
+            background-color: #666; /* Dark navigation background color */
             overflow: hidden;
         }
 
@@ -49,7 +51,7 @@
         }
 
         footer {
-            background-color: #005f5f; /* Slightly darker teal footer background color */
+            background-color: #333; /* Dark footer background color */
             color: #fff;
             padding: 1em;
             text-align: center;
@@ -64,7 +66,7 @@
         }
 
         .project h3 {
-            color: #005f5f; /* Slightly darker teal project title color */
+            color: #333; /* Dark project title color */
         }
 
         .project p {
@@ -72,7 +74,7 @@
         }
 
         .project a {
-            color: #005f5f; /* Slightly darker teal project link color */
+            color: #333; /* Dark project link color */
             text-decoration: none;
             font-weight: bold;
         }
@@ -87,6 +89,19 @@
             float: left;
             margin-right: 20px; /* Add some spacing between image and text */
             border-radius: 8px;
+        }
+
+        /* Modern styling for the About Me section */
+        #about {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #about p {
+            flex: 1;
+            margin: 0;
+            padding-left: 20px; /* Add padding for better spacing */
         }
     </style>
 </head>
@@ -106,8 +121,10 @@
 
     <section id="about">
         <img id="profile-image" src="image.jpg" alt="Profile Image">
-        <h2>About Me</h2>
-        <p>I am a Postdoctoral Fellow at the Immigration Policy Lab (IPL) at ETH Zurich, specializing in historical legacies, inter-group prejudice reduction, and experimental methods. I received my PhD in Social and Political Science from the European University Institute in 2023, having previously obtained an MPhil in Comparative Politics from the University of Oxford. I have also been a visiting graduate student at UC Berkeley and Universidad Carlos III de Madrid. My PhD research focused on the relationship between collective memory and inter-group prejudice in post-imperial Britain, and my work also covers the politics of guilt and shame, causal inference techniques, and nationalism. My work with the IPL focuses on the causal identification of the effects of citizenship and legal status changes for migrants and host communities.</p>
+        <div>
+            <h2>About Me</h2>
+            <p>I am a Postdoctoral Fellow at the Immigration Policy Lab (IPL) at ETH Zurich, specializing in historical legacies, inter-group prejudice reduction, and experimental methods. I received my PhD in Social and Political Science from the European University Institute in 2023, having previously obtained an MPhil in Comparative Politics from the University of Oxford. I have also been a visiting graduate student at UC Berkeley and Universidad Carlos III de Madrid. My PhD research focused on the relationship between collective memory and inter-group prejudice in post-imperial Britain, and my work also covers the politics of guilt and shame, causal inference techniques, and nationalism. My work with the IPL focuses on the causal identification of the effects of citizenship and legal status changes for migrants and host communities.</p>
+        </div>
     </section>
 
     <section id="projects">
