@@ -10,12 +10,12 @@
             font-family: 'Yu Mincho', serif;
             margin: 0;
             padding: 0;
-            background-color: #006666; /* Dark teal background color */
-            color: #fff; /* White text color */
+            background-color: #008080; /* Light teal background color */
+            color: #333; /* Dark gray text color */
         }
 
         header {
-            background-color: #004a4a; /* Slightly darker teal header background color */
+            background-color: #006666; /* Teal header background color */
             color: #fff;
             padding: 1em;
             text-align: center;
@@ -28,7 +28,7 @@
         }
 
         nav {
-            background-color: #003535; /* Darker teal navigation background color */
+            background-color: #005757; /* Darker teal navigation background color */
             overflow: hidden;
         }
 
@@ -43,19 +43,19 @@
         }
 
         nav a:hover {
-            background-color: #005757; /* Hover color for navigation links */
+            background-color: #007070; /* Hover color for navigation links */
         }
 
         section {
             padding: 20px;
             margin: 20px;
-            background-color: #005757; /* Lighter teal section background color */
+            background-color: #006666; /* Teal section background color */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Light shadow effect */
         }
 
         footer {
-            background-color: #004a4a; /* Slightly darker teal footer background color */
+            background-color: #005757; /* Darker teal footer background color */
             color: #fff;
             padding: 1em;
             text-align: center;
@@ -90,9 +90,9 @@
 
         /* Style for the image */
         #profile-image {
-            max-width: 115px; /* 15% bigger than the original */
-            float: left;
-            margin-right: 20px;
+            max-width: 110px; /* 10% bigger than the original */
+            float: right; /* Move the image to the right of the text */
+            margin-left: 20px;
             border-radius: 50%; /* Circular border radius for the image */
         }
 
@@ -105,7 +105,7 @@
 
         #about div {
             flex: 1;
-            padding-left: 20px;
+            padding-right: 20px;
         }
 
         #about h2 {
@@ -132,11 +132,11 @@
     </nav>
 
     <section id="about">
-        <img id="profile-image" src="image.jpg" alt="Profile Image">
         <div>
             <h2>About Me</h2>
             <p>I am a Postdoctoral Fellow at the Immigration Policy Lab (IPL) at ETH Zurich, specializing in historical legacies, inter-group prejudice reduction, and experimental methods. I received my PhD in Social and Political Science from the European University Institute in 2023, having previously obtained an MPhil in Comparative Politics from the University of Oxford. I have also been a visiting graduate student at UC Berkeley and Universidad Carlos III de Madrid. My PhD research focused on the relationship between collective memory and inter-group prejudice in post-imperial Britain, and my work also covers the politics of guilt and shame, causal inference techniques, and nationalism. My work with the IPL focuses on the causal identification of the effects of citizenship and legal status changes for migrants and host communities.</p>
         </div>
+        <img id="profile-image" src="image.jpg" alt="Profile Image">
     </section>
 
     <section id="projects">
