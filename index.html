@@ -7,18 +7,22 @@
     <title>Joe Kendall - Personal Website</title>
     <style>
         body {
-            font-family: 'Garamond', serif;
+            font-family: 'Yu Mincho', serif; /* Yu Mincho font */
             margin: 0;
             padding: 0;
-            background-color: #e6f7ff; /* Teal background color */
+            background-color: #cfe3e7; /* Slightly darker teal background color */
             color: #333;
         }
 
         header {
-            background-color: #008080; /* Teal header background color */
+            background-color: #006666; /* Slightly darker teal header background color */
             color: #fff;
             padding: 1em;
             text-align: center;
+        }
+
+        header h1 {
+            font-weight: bold; /* Make the title bold */
         }
 
         nav {
@@ -44,13 +48,36 @@
         }
 
         footer {
-            background-color: #008080; /* Teal footer background color */
+            background-color: #006666; /* Slightly darker teal footer background color */
             color: #fff;
             padding: 1em;
             text-align: center;
             position: fixed;
             bottom: 0;
             width: 100%;
+        }
+
+        /* Style for projects */
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .project h3 {
+            color: #006666; /* Slightly darker teal project title color */
+        }
+
+        .project p {
+            color: #555;
+        }
+
+        .project a {
+            color: #006666; /* Slightly darker teal project link color */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -75,7 +102,22 @@
 
     <section id="projects">
         <h2>Projects</h2>
-        <p>List your projects and provide brief descriptions.</p>
+
+        <!-- Replace with your actual project information -->
+        <div class="project">
+            <h3>Project 1: Project Name</h3>
+            <p>Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#project1">Learn More</a>
+        </div>
+
+        <div class="project">
+            <h3>Project 2: Project Name</h3>
+            <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#project2">Learn More</a>
+        </div>
+
+        <!-- Add more projects as needed -->
+
     </section>
 
     <section id="contact">
@@ -84,7 +126,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy;</p>
     </footer>
 
 </body>
