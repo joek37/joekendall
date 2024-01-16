@@ -1,13 +1,114 @@
-<!-- ... (existing code remains the same) ... -->
+<!DOCTYPE html>
+<html lang="en">
 
-<section id="about" style="background-color: #b8d8e0;"> <!-- Adjusted background color -->
-    <h2>About Me</h2>
-    <img id="profile-image" src="image.jpg" alt="Profile Image" style="max-width: 100%; border-radius: 8px;">
-    <p>I am a Postdoctoral Fellow at the Immigration Policy Lab (IPL) at ETH Zurich, specializing in historical legacies, inter-group prejudice reduction, and experimental methods. I received my PhD in Social and Political Science from the European University Institute in 2023, having previously obtained an MPhil in Comparative Politics from the University of Oxford. I have also been a visiting graduate student at UC Berkeley and Universidad Carlos III de Madrid. My PhD research focused on the relationship between collective memory and inter-group prejudice in post-imperial Britain, and my work also covers the politics of guilt and shame, causal inference techniques, and nationalism. My work with the IPL focuses on the causal identification of the effects of citizenship and legal status changes for migrants and host communities.</p>
-</section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe Kendall</title>
+    <style>
+        body {
+            font-family: 'Yu Mincho', serif; /* Yu Mincho font */
+            margin: 0;
+            padding: 0;
+            background-color: #b8d8e0; /* Slightly darker teal background color */
+            color: #333;
+        }
 
-<!-- ... (remaining code remains the same) ... -->
+        header {
+            background-color: #005f5f; /* Slightly darker teal header background color */
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
 
+        header h1 {
+            font-weight: bold; /* Make the title bold */
+        }
+
+        nav {
+            background-color: #004a4a; /* Darker teal navigation background color */
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Clear floats */
+        }
+
+        footer {
+            background-color: #005f5f; /* Slightly darker teal footer background color */
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Style for projects */
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .project h3 {
+            color: #005f5f; /* Slightly darker teal project title color */
+        }
+
+        .project p {
+            color: #555;
+        }
+
+        .project a {
+            color: #005f5f; /* Slightly darker teal project link color */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style for the image */
+        #profile-image {
+            max-width: 100px; /* Adjust the width as needed */
+            float: left;
+            margin-right: 20px; /* Add some spacing between image and text */
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Joe Kendall</h1>
+        <p>Postdoctoral Fellow - ETH Zurich</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <img id="profile-image" src="image.jpg" alt="Profile Image">
+        <h2>About Me</h2>
+        <p>I am a Postdoctoral Fellow at the Immigration Policy Lab (IPL) at ETH Zurich, specializing in historical legacies, inter-group prejudice reduction, and experimental methods. I received my PhD in Social and Political Science from the European University Institute in 2023, having previously obtained an MPhil in Comparative Politics from the University of Oxford. I have also been a visiting graduate student at UC Berkeley and Universidad Carlos III de Madrid. My PhD research focused on the relationship between collective memory and inter-group prejudice in post-imperial Britain, and my work also covers the politics of guilt and shame, causal inference techniques, and nationalism. My work with the IPL focuses on the causal identification of the effects of citizenship and legal status changes for migrants and host communities.</p>
+    </section>
 
     <section id="projects">
         <h2>Projects</h2>
