@@ -16,10 +16,10 @@
 
         header {
             background-image: url('image2.jpg'); /* Background image for the header */
-            background-size: 250%; /* Zoom out the background image */
+            background-size: 350%; /* Zoom out the background image by 250% */
             background-position: center;
             background-attachment: fixed;
-            opacity: 0.6; /* 20% more transparent */
+            opacity: 0.8; /* 20% more transparent */
             color: #fff; /* White text color */
             padding: 1em;
             text-align: center;
@@ -29,6 +29,10 @@
             font-weight: bold;
             margin: 0;
             font-size: 2em; /* Larger title font size */
+            color: #fff; /* White text color */
+            display: inline-block;
+            padding: 5px 10px;
+            border: 2px solid #000; /* Black border */
         }
 
         nav {
@@ -95,6 +99,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            text-align: justify;
         }
 
         #about div {
@@ -109,6 +114,10 @@
         #about p {
             color: #555; /* Dark gray text color for about me section */
         }
+
+        #about a {
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -121,7 +130,7 @@
 
     <nav>
         <!-- Remove the link to the 'About Me' page -->
-        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
         <a href="https://www.dropbox.com/scl/fi/qiu52cslvteojxschbcuw/CV-Kendall.pdf?rlkey=o1lsyn0jb00enc5dvi8doqs2a&dl=0" target="_blank">CV</a>
     </nav>
 
@@ -131,11 +140,6 @@
             <p>I am a Postdoctoral Fellow at the Immigration Policy Lab (IPL) at ETH Zurich, specializing in historical legacies, inter-group prejudice reduction, and experimental methods. I received my PhD in Social and Political Science from the European University Institute in 2023, having previously obtained an MPhil in Comparative Politics from the University of Oxford. I have also been a visiting graduate student at UC Berkeley and Universidad Carlos III de Madrid. My PhD research focused on the relationship between collective memory and inter-group prejudice in post-imperial Britain, and my work also covers the politics of guilt and shame, causal inference techniques, and nationalism. My work with the IPL focuses on the causal identification of the effects of citizenship and legal status changes for migrants and host communities.</p>
         </div>
         <img id="profile-image" src="image.jpg" alt="Profile Image">
-    </section>
-
-
-        <!-- Add more projects as needed -->
-
     </section>
 
     <section id="contact">
