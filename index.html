@@ -10,13 +10,14 @@
             font-family: 'Yu Mincho', serif;
             margin: 0;
             padding: 0;
-            background-color: #cce5e5; /* Pale teal background color */
+            background-color: #e6f5f5; /* Lighter teal background color */
             color: #333; /* Dark gray text color */
         }
 
         header {
-            background-color: #99b3b3; /* Slightly darker pale teal header background color */
-            color: #333;
+            background-image: url('image2.jpg'); /* Background image for the header */
+            background-size: cover;
+            color: #fff; /* White text color */
             padding: 1em;
             text-align: center;
         }
@@ -28,7 +29,7 @@
         }
 
         nav {
-            background-color: #80a0a0; /* Darker pale teal navigation background color */
+            background-color: #99b3b3; /* Darker pale teal navigation background color */
             overflow: hidden;
         }
 
@@ -43,21 +44,21 @@
         }
 
         nav a:hover {
-            background-color: #99b3b3; /* Hover color for navigation links */
+            background-color: #cce5e5; /* Hover color for navigation links */
         }
 
         section {
             padding: 20px;
             margin: 20px;
-            background-color: #99b3b3; /* Pale teal section background color */
+            background-color: #cce5e5; /* Lighter teal section background color */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Light shadow effect */
         }
 
         footer {
-            background-color: #80a0a0; /* Darker pale teal footer background color */
+            background-color: #99b3b3; /* Darker pale teal footer background color */
             color: #333;
-            padding: 1em;
+            padding: 0.5em; /* Smaller footer padding */
             text-align: center;
             position: fixed;
             bottom: 0;
@@ -85,12 +86,12 @@
         }
 
         .project a:hover {
-            color: #cce5e5; /* Hover color for project links */
+            color: #e6f5f5; /* Hover color for project links */
         }
 
         /* Style for the image */
         #profile-image {
-            max-width: 132px; /* 20% bigger than the original */
+            max-width: 146px; /* 10% bigger than the original */
             float: right; /* Move the image to the right of the text */
             margin-left: 20px;
             border-radius: 50%; /* Circular border radius for the image */
@@ -126,7 +127,7 @@
     </header>
 
     <nav>
-        <a href="#about">About Me</a>
+        <!-- Remove the link to the 'About Me' page -->
         <a href="projects.html">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
