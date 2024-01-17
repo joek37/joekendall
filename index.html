@@ -16,7 +16,7 @@
 
         header {
             background-image: url('image2.jpg'); /* Background image for the header */
-            background-size: 150%; /* Zoom out the background image by 250% */
+            background-size: 150%; /* Zoom out the background image by 150% */
             background-position: center;
             background-attachment: fixed;
             opacity: 0.8; /* 20% more transparent */
@@ -30,9 +30,8 @@
             margin: 0;
             font-size: 2em; /* Larger title font size */
             color: #fff; /* White text color */
-            display: inline-block;
-            padding: 5px 10px;
-            border: 2px solid #000; /* Black border */
+            display: inline; /* Display as inline instead of inline-block */
+            text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; /* Black text outline */
         }
 
         nav {
