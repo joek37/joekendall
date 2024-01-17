@@ -50,19 +50,12 @@
             background-color: #cce5e5; /* Hover color for navigation links */
         }
 
-        .project-container {
-            max-width: 800px; /* Set your desired max-width */
-            margin: 0 auto; /* Center the container */
-        }
-
         .project {
             margin-bottom: 20px;
             padding: 20px;
             background-color: #cce5e5; /* Lighter teal project background color */
-            border-radius: 50%;
+            border-radius: 8px;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Light shadow effect */
-            position: relative;
-            overflow: hidden;
         }
 
         .project a {
@@ -74,25 +67,6 @@
 
         .project a:hover {
             color: #e6f5f5; /* Hover color for project links */
-        }
-
-        .project:before {
-            content: '';
-            display: block;
-            padding-top: 100%; /* Set to 1:1 aspect ratio (height = width) */
-        }
-
-        .project p {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            z-index: 1; /* Ensure text is on top of the background */
         }
 
         footer {
