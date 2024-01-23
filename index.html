@@ -21,10 +21,10 @@
         header {
             background-image: url('image3.jpg'); /* Background image for the header */
             background-size: cover; /* Cover the entire header */
-            background-position: center; /* Center the background image */
+            background-position: center bottom; /* Center the background image vertically at the bottom */
             background-attachment: fixed;
             opacity: 0.8; /* 20% more transparent */
-            color: #fff; /* White text color */
+            color: #333; /* Dark gray text color */
             padding: 1em;
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
@@ -34,7 +34,14 @@
             font-weight: bold;
             margin: 0;
             font-size: 2.5em; /* Slightly larger title font size */
-            color: #fff; /* White text color */
+            color: #333; /* Dark gray text color */
+        }
+
+        #profile-image {
+            max-width: 292px; /* 146px * 2 for 100% larger */
+            float: right;
+            margin-left: 20px;
+            border-radius: 50%;
         }
 
         nav {
@@ -91,13 +98,6 @@
 
         .project a:hover {
             color: #e6f5f5; /* Hover color for project links */
-        }
-
-        #profile-image {
-            max-width: 146px;
-            float: right;
-            margin-left: 20px;
-            border-radius: 50%;
         }
 
         #about {
