@@ -18,23 +18,37 @@
             margin-right: auto;
         }
 
-        header {
-            background-image: url('image3.jpg'); /* Background image for the header */
-            background-size: cover; /* Cover the entire header */
-            background-position: center; /* Center the background image */
-            background-attachment: fixed;
-            opacity: 0.8; /* 20% more transparent */
-            color: #fff; /* White text color */
-            padding: 1em;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-        }
+header {
+    position: relative;
+    background-image: url('image3.jpg'); /* Background image for the header */
+    background-position: center center; /* Center the background image horizontally and vertically */
+    background-attachment: fixed; /* Fixed background position */
+    background-size: cover; /* Cover the entire header */
+    color: #333; /* Dark gray text color */
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
 
-        header h1 {
-            font-weight: bold;
-            margin: 0;
-            font-size: 2.5em; /* Slightly larger title font size */
-            color: #fff; /* White text color */
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6); /* Set the background color with alpha (transparency) */
+}
+
+header h1, header p {
+    position: relative;
+    z-index: 1;
+    /* Set the z-index to place the text above the ::after overlay */
+}
+
+
+        header p {
+            font-weight: bold; /* Make the subtitle bold */
         }
 
         nav {

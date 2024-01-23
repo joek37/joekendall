@@ -18,27 +18,41 @@
             margin-right: auto;
         }
 
-        header {
-            background-image: url('image3.jpg'); /* Background image for the header */
-            background-position: center center; /* Center the background image horizontally and vertically */
-            background-attachment: fixed; /* Fixed background position */
-            background-size: 70%; /* Adjust the zoom level, you can experiment with different percentages */
-            opacity: 0.8; /* 20% more transparent */
-            color: #333; /* Dark gray text color */
-            padding: 1em;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-        }
+header {
+    position: relative;
+    background-image: url('image3.jpg'); /* Background image for the header */
+    background-position: center center; /* Center the background image horizontally and vertically */
+    background-attachment: fixed; /* Fixed background position */
+    background-size: cover; /* Cover the entire header */
+    color: #333; /* Dark gray text color */
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
 
-        header h1 {
-            font-weight: bold;
-            margin: 0;
-            font-size: 2.5em; /* Slightly larger title font size */
-            color: #333; /* Dark gray text color */
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6); /* Set the background color with alpha (transparency) */
+}
+
+header h1, header p {
+    position: relative;
+    z-index: 1;
+    /* Set the z-index to place the text above the ::after overlay */
+}
+
+
+        header p {
+            font-weight: bold; /* Make the subtitle bold */
         }
 
         #profile-image {
-            max-width: 292px; /* 146px * 2 for 100% larger */
+            max-width: 350px; /* 146px * 2 for 100% larger */
             float: right;
             margin-left: 20px;
             border-radius: 50%;
