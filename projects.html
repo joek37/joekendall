@@ -10,30 +10,37 @@
             font-family: 'Yu Mincho', serif;
             margin: 0;
             padding: 0;
-            background-color: #e6f5f5; /* Lighter teal background color */
+            background-color: #fff; /* Set base background color to white */
             color: #333; /* Dark gray text color */
+            max-width: 1200px; /* Set max-width for the content */
+            min-width: 600px; /* Set min-width for the content */
+            margin-left: auto;
+            margin-right: auto;
         }
 
         header {
             background-image: url('image2.jpg'); /* Background image for the header */
-            background-size: 100%; /* Zoom out the background image by 250% */
-            background-position: center bottom; /* Align to the bottom of the header */
+            background-size: cover; /* Cover the entire header */
+            background-position: center; /* Center the background image */
             background-attachment: fixed;
             opacity: 0.8; /* 20% more transparent */
             color: #fff; /* White text color */
             padding: 1em;
             text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
         }
 
         header h1 {
             font-weight: bold;
             margin: 0;
-            font-size: 2em; /* Larger title font size */
+            font-size: 2.5em; /* Slightly larger title font size */
+            color: #fff; /* White text color */
         }
 
         nav {
             background-color: #99b3b3; /* Darker pale teal navigation background color */
             overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
         }
 
         nav a {
@@ -41,7 +48,7 @@
             display: block;
             color: #333;
             text-align: center;
-            padding: 14px 16px;
+            padding: 16px 20px; /* Adjusted padding */
             text-decoration: none;
             transition: background-color 0.3s; /* Smooth color transition on hover */
         }
@@ -50,12 +57,29 @@
             background-color: #cce5e5; /* Hover color for navigation links */
         }
 
-        .project {
-            margin-bottom: 20px;
+        section {
+            margin: 20px auto; /* Center the section */
             padding: 20px;
-            background-color: #cce5e5; /* Lighter teal project background color */
+            background-color: #cce5e5; /* Lighter teal section background color */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Light shadow effect */
+        }
+
+        section h2 {
+            color: #333; /* Dark gray section title color */
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .project h3 {
+            color: #333; /* Dark gray project title color */
+        }
+
+        .project p {
+            color: #555; /* Dark gray text color for projects */
+            font-size: 16px; /* Make the text slightly larger */
         }
 
         .project a {
@@ -92,18 +116,17 @@
         <a href="index.html">Home</a> <!-- Link back to the main page -->
     </nav>
 
-    <div class="project" id="project1">
-        <p><a href="https://www.dropbox.com/s/z0mejllpjx3ewb3/Kendall%20-%20Blood%20Runs%20Thicker%20than%20Water_DropBox.pdf?dl=0">Blood Runs Thicker Than Water: Ancestral Ties to Slavery and Ingroup Defensiveness</a> (under review). <br>
-            This survey experiment focuses on how individuals react to information about ancestral involvement in the slave trade, demonstrating how the invocation of familial identity when engaging with ‘uncomfortable’ histories can help to reduce backlash and inter-group prejudice.</p>
-    </div>
+    <section id="project1" class="project">
+        <h3><a href="https://www.dropbox.com/s/z0mejllpjx3ewb3/Kendall%20-%20Blood%20Runs%20Thicker%20than%20Water_DropBox.pdf?dl=0">Blood Runs Thicker Than Water: Ancestral Ties to Slavery and Ingroup Defensiveness</a></h3>
+        <p>(under review). This survey experiment focuses on how individuals react to information about ancestral involvement in the slave trade, demonstrating how the invocation of familial identity when engaging with ‘uncomfortable’ histories can help to reduce backlash and inter-group prejudice.</p>
+    </section>
 
-    <div class="project" id="project2">
-        <p><a href="https://www.dropbox.com/s/wigljnhzdy6oapj/Kendall%20-%20We%20Could%20Have%20Been%20Worse_DropBox.pdf?dl=0">We Could Have Been Worse: Competitive Innocence and Defensive Memory Among Perpetrator Groups</a> (under review). <br>
-            In this survey experiment, I test the implications of rhetorical appeals to ‘worse’ cases used by members of perpetrator groups to legitimise their group’s history. I find that such defensive strategies not only enable participants to avoid confronting ‘uncomfortable’ histories but actively increase prejudice towards victimized outgroups.</p>
-    </div>
+    <section id="project2" class="project">
+        <h3><a href="https://www.dropbox.com/s/wigljnhzdy6oapj/Kendall%20-%20We%20Could%20Have%20Been%20Worse_DropBox.pdf?dl=0">We Could Have Been Worse: Competitive Innocence and Defensive Memory Among Perpetrator Groups</a></h3>
+        <p>(under review). In this survey experiment, I test the implications of rhetorical appeals to ‘worse’ cases used by members of perpetrator groups to legitimise their group’s history. I find that such defensive strategies not only enable participants to avoid confronting ‘uncomfortable’ histories but actively increase prejudice towards victimized outgroups.</p>
+    </section>
 
     <!-- Add more sections for other projects as needed -->
-
 
 </body>
 
