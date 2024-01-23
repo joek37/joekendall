@@ -13,6 +13,7 @@
             background-color: #fff; /* Set base background color to white */
             color: #333; /* Dark gray text color */
             max-width: 1200px; /* Set max-width for the content */
+            min-width: 320px; /* Set min-width for the content */
             margin-left: auto;
             margin-right: auto;
         }
@@ -138,11 +139,6 @@
         #contact p {
             color: #555; /* Dark gray text color for contact section */
         }
-
-        .close-icon {
-            font-size: 20px;
-            cursor: pointer;
-        }
     </style>
 </head>
 
@@ -169,14 +165,8 @@
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: joe.kendall[at]gess.ethz.ch</p>
-        <p class="close-icon" onclick="closeContact()">✕</p>
+        <p>Twitter: <a href="https://twitter.com/joeakendall">@joeakendall</a></p>
     </section>
-
-    <script>
-        function closeContact() {
-            document.getElementById('contact').style.display = 'none';
-        }
-    </script>
 
 </body>
 
