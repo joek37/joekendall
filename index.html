@@ -10,7 +10,7 @@
             font-family: 'Yu Mincho', serif;
             margin: 0;
             padding: 0;
-            background-color: #e6f5f5; /* Lighter teal background color */
+            background-color: #fff; /* Set base background color to white */
             color: #333; /* Dark gray text color */
             max-width: 1200px; /* Set max-width for the content */
             margin-left: auto;
@@ -26,18 +26,20 @@
             color: #fff; /* White text color */
             padding: 1em;
             text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
         }
 
         header h1 {
             font-weight: bold;
             margin: 0;
-            font-size: 2em; /* Larger title font size */
+            font-size: 2.5em; /* Slightly larger title font size */
             color: #fff; /* White text color */
         }
 
         nav {
             background-color: #99b3b3; /* Darker pale teal navigation background color */
             overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
         }
 
         nav a {
@@ -45,7 +47,7 @@
             display: block;
             color: #333;
             text-align: center;
-            padding: 14px 16px;
+            padding: 16px 20px; /* Adjusted padding */
             text-decoration: none;
             transition: background-color 0.3s; /* Smooth color transition on hover */
         }
@@ -62,7 +64,10 @@
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Light shadow effect */
         }
 
-        /* Style for projects */
+        section h2 {
+            color: #333; /* Dark gray section title color */
+        }
+
         .project {
             margin-bottom: 20px;
         }
@@ -73,6 +78,7 @@
 
         .project p {
             color: #555; /* Dark gray text color for projects */
+            font-size: 16px; /* Make the text slightly larger */
         }
 
         .project a {
@@ -86,15 +92,13 @@
             color: #e6f5f5; /* Hover color for project links */
         }
 
-        /* Style for the image */
         #profile-image {
-            max-width: 146px; /* 10% bigger than the original */
-            float: right; /* Move the image to the right of the text */
+            max-width: 146px;
+            float: right;
             margin-left: 20px;
-            border-radius: 50%; /* Circular border radius for the image */
+            border-radius: 50%;
         }
 
-        /* Modern styling for the About Me section */
         #about {
             display: flex;
             align-items: center;
@@ -118,6 +122,27 @@
         #about a {
             font-weight: bold;
         }
+
+        #contact {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #cce5e5;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        #contact h2 {
+            color: #333; /* Dark gray contact title color */
+        }
+
+        #contact p {
+            color: #555; /* Dark gray text color for contact section */
+        }
+
+        .close-icon {
+            font-size: 20px;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -129,7 +154,6 @@
     </header>
 
     <nav>
-        <!-- Remove the link to the 'About Me' page -->
         <a href="research.html">Research</a>
         <a href="https://www.dropbox.com/scl/fi/zti1iwg8nb3q1rwe1fqx8/CV.pdf?rlkey=3ulkhpbi3bechh0crrmxl7xqz&dl=0" target="_blank">CV</a>
     </nav>
@@ -145,8 +169,14 @@
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: joe.kendall[at]gess.ethz.ch</p>
-        <p>Twitter: <a href="https://twitter.com/joeakendall">@joeakendall</a></p>
+        <p class="close-icon" onclick="closeContact()">✕</p>
     </section>
+
+    <script>
+        function closeContact() {
+            document.getElementById('contact').style.display = 'none';
+        }
+    </script>
 
 </body>
 
