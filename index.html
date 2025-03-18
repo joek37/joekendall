@@ -18,17 +18,18 @@
             margin-right: auto;
         }
 
-        header {
-            position: relative;
-            background-image: url('image3.jpg');
-            background-position: center bottom;
-            background-attachment: fixed;
-            background-size: cover;
-            color: #333;
-            padding: 1em;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+  header {
+    position: relative;
+    background-image: url('image3.jpg');
+    background-position: center bottom;
+    background-attachment: fixed; /* Keep the background fixed */
+    background-size: cover; /* Ensure it covers the entire header */
+    color: #333;
+    padding: 2em 0; /* Adjusted padding for better spacing */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 400px; /* Set a fixed height for the header */
+}
 
         header::after {
             content: '';
