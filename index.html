@@ -23,14 +23,14 @@
         header {
             position: relative;
             background-image: url('image3.jpg');
-            background-position: center bottom;
-            background-attachment: fixed;
-            background-size: cover;
+            background-position: center center; /* Center image */
+            background-repeat: no-repeat; /* Prevent image repetition */
+            background-size: cover; 
             color: #333;
             padding: 2em 0;
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            height: 400px;
+            height: 500px; /* Increased header height */
         }
 
         header::after {
@@ -50,16 +50,16 @@
         }
 
         header h1 {
-            font-size: 2.5em; /* Increased header font size */
+            font-size: 2.8em; /* Increased header font size */
         }
 
         header p {
             font-weight: bold;
-            font-size: 1.2em; /* Adjusted paragraph font size */
+            font-size: 1.3em; /* Adjusted paragraph font size */
         }
 
         #profile-image {
-            max-width: 300px; /* Adjusted image size */
+            max-width: 350px; /* Increased image size */
             float: right;
             margin-left: 20px;
             border-radius: 50%;
@@ -96,7 +96,7 @@
 
         section h2 {
             color: #333;
-            font-size: 2em; /* Increased section header size */
+            font-size: 2.2em; /* Increased section header size */
             margin-bottom: 20px;
         }
 
@@ -154,8 +154,8 @@
     </header>
 
     <nav>
-        <a href="research.html">Research</a>
-        <a href="https://www.dropbox.com/scl/fi/jgs2gv37b8ajnjttcwyz2/CV.pdf?rlkey=zb30vfklr7obr7bo7i07eutyg&st=9l5lw8vx&dl=0">CV</a>
+        <a href="research.html" style="font-size: 1.1em;">Research</a> 
+        <a href="https://www.dropbox.com/scl/fi/jgs2gv37b8ajnjttcwyz2/CV.pdf?rlkey=zb30vfklr7obr7bo7i07eutyg&st=9l5lw8vx&dl=0" style="font-size: 1.1em;">CV</a> 
     </nav>
 
     <section id="about">
