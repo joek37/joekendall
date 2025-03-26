@@ -22,16 +22,26 @@
 
         header {
             position: relative;
-            background-color: #99b3b3; /* Background color behind the image */
             background-image: url('image5.jpg');
-            background-position: center center;
+            background-position: center top; /* Align to the top center */
             background-repeat: no-repeat;
-            background-size: contain; /* Keeps image fully visible */
+            background-size: cover; /* Use 'cover' to fill the header and crop */
             color: #333;
             padding: 2em 0;
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             height: 300px; /* Adjust height as needed */
+            overflow: hidden; /* Prevent image overflow */
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.7);
         }
 
         header h1, header p {
@@ -50,8 +60,8 @@
         }
 
         #profile-image {
-            width: 350px;
-            height: auto;
+            width: 350px; /* Adjusted image width */
+            height: auto; /* Maintain aspect ratio */
             float: right;
             margin-left: 20px;
             border-radius: 50%;
