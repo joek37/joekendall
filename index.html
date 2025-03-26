@@ -158,7 +158,9 @@
 
     #profile-image {
         width: 70%;
-        height: auto; /* Ensure height adjusts proportionally */
+        aspect-ratio: 1 / 1; /* Force 1:1 aspect ratio */
+        object-fit: cover; /* Important to keep the image inside the box */
+        border-radius: 50%;
         margin: 20px 0;
     }
 }
