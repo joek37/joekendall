@@ -20,18 +20,19 @@
             line-height: 1.6;
         }
 
-        header {
-            position: relative;
-            background-image: url('image5.jpg');
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            color: #333;
-            padding: 2em 0;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            height: 300px;
-        }
+header {
+    position: relative;
+    background-image: url('image5.jpg');
+    background-position: center top; /* Align to the top center */
+    background-repeat: no-repeat;
+    background-size: cover; /* Use 'cover' to fill the header and crop */
+    color: #333;
+    padding: 2em 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    overflow: hidden; /* Prevent image overflow */
+}
 
         header::after {
             content: '';
