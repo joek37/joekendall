@@ -13,7 +13,6 @@
             background-color: #f8f8f8;
             color: #333;
             max-width: 1200px;
-            min-width: 600px;
             margin-left: auto;
             margin-right: auto;
             font-size: 18px;
@@ -23,15 +22,15 @@
         header {
             position: relative;
             background-image: url('image5.jpg');
-            background-position: center top; /* Align to the top center */
+            background-position: center top;
             background-repeat: no-repeat;
-            background-size: cover; /* Use 'cover' to fill the header and crop */
+            background-size: cover;
             color: #333;
             padding: 2em 0;
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            height: 300px; /* Adjust height as needed */
-            overflow: hidden; /* Prevent image overflow */
+            height: 300px;
+            overflow: hidden;
         }
 
         header::after {
@@ -44,7 +43,8 @@
             background: rgba(255, 255, 255, 0.7);
         }
 
-        header h1, header p {
+        header h1,
+        header p {
             position: relative;
             z-index: 1;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -60,10 +60,8 @@
         }
 
         #profile-image {
-            width: 350px; /* Adjusted image width */
-            height: auto; /* Maintain aspect ratio */
-            float: right;
-            margin-left: 20px;
+            width: 30%; /* Make image responsive */
+            height: auto;
             border-radius: 50%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -104,14 +102,14 @@
 
         #about {
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
             text-align: justify;
         }
 
         #about div {
             flex: 1;
-            padding-right: 30px;
+            padding-right: 20px;
         }
 
         #about p {
@@ -145,6 +143,24 @@
         #contact a:hover {
             text-decoration: underline;
         }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            #about {
+                flex-direction: column; /* Stack on smaller screens */
+                align-items: center;
+            }
+
+            #about div {
+                padding-right: 0;
+                width: 100%; /* Take full width on mobile */
+            }
+
+            #profile-image {
+                width: 70%; /* Adjust image size on mobile */
+                margin: 20px 0; /* Add margin for spacing */
+            }
+        }
     </style>
 </head>
 
@@ -157,13 +173,22 @@
 
     <nav>
         <a href="research.html" style="font-size: 1.1em;">Research</a>
-        <a href="https://www.dropbox.com/scl/fi/hh8i6dpxy9fvb8t3h469d/CV.pdf?rlkey=9rwknbflq9eo1blatsx54zt98&st=fruc6vpk&dl=0" style="font-size: 1.1em;">CV</a>
+        <a href="https://www.dropbox.com/scl/fi/hh8i6dpxy9fvb8t3h469d/CV.pdf?rlkey=9rwknbflq9eo1blatsx54zt98&st=fruc6vpk&dl=0"
+            style="font-size: 1.1em;">CV</a>
     </nav>
 
     <section id="about">
         <div>
             <h2>About Me</h2>
-            <p>I am a Postdoctoral Fellow at the Immigration Policy Lab (IPL) at ETH Zürich, specialising in historical legacies, citizenship, inter-group prejudice reduction, and experimental methods. I received my PhD in Social and Political Science from the European University Institute in 2023, having previously obtained an MPhil in Comparative Politics from the University of Oxford. I have also been a visiting graduate student at UC Berkeley and Universidad Carlos III de Madrid. My PhD research focused on the relationship between collective memory and inter-group prejudice in post-imperial Britain, and my work also covers the politics of guilt and shame, causal inference techniques, and nationalism. My work with the IPL focuses on the causal identification of the effects of citizenship and legal status changes for migrants and host communities.</p>
+            <p>I am a Postdoctoral Fellow at the Immigration Policy Lab (IPL) at ETH Zürich, specialising in historical
+                legacies, citizenship, inter-group prejudice reduction, and experimental methods. I received my PhD in
+                Social and Political Science from the European University Institute in 2023, having previously obtained
+                an MPhil in Comparative Politics from the University of Oxford. I have also been a visiting graduate
+                student at UC Berkeley and Universidad Carlos III de Madrid. My PhD research focused on the relationship
+                between collective memory and inter-group prejudice in post-imperial Britain, and my work also covers
+                the politics of guilt and shame, causal inference techniques, and nationalism. My work with the IPL
+                focuses on the causal identification of the effects of citizenship and legal status changes for migrants
+                and host communities.</p>
         </div>
         <img id="profile-image" src="image.jpg" alt="Profile Image">
     </section>
